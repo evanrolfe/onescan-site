@@ -137,7 +137,7 @@
                     <div class="content">
                         <h3 class="title">Form Fuzzing</h3>
 
-                        <p>Optionally fuzz form inputs to submit forms and record resulting API calls. These API calls will later be cross-examined in the Authorization Analysis phase. You can also record manual form submittion too.</p>
+                        <p>Optionally fuzz form inputs to submit forms and record resulting API calls. These API calls will later be cross-examined in the Authorization Analysis phase. You can also record manual form submission too.</p>
                     </div><!--//content-->
                 </div><!--//item-->
                 <div class="item col-4 text-center">
@@ -170,25 +170,25 @@
                     <b>1. Configuration</b>
 
                     <p>
-                      Enter the details of your site. Record the process for logging in i.e. by typing in username and password fields. Enter user credentials for the users you wish to crawl the site under - ideally at least two user per role. Add any blacklisted paths you don't want the crawler to touch. Optionally, you can login as a user and record values to enter for certain forms to ensure they are submitted with valid inputs, otherwise the fuzzer will infer what values to enter.
+                      Enter the details of your site. Record the process for logging in i.e. by typing in username and password fields. Enter user credentials for the users you wish to crawl under - ideally at least two user per role. Add any blacklisted paths you don't want the crawler to touch. Optionally, you can save values to enter for certain forms on your site to ensure they are submitted with valid inputs, otherwise the fuzzer will infer what values to enter.
                     </p>
 
                     <b>2. Scanning & Crawling</b>
 
                     <p>
-                        The scanner logs in using the pre-recorded method from step 1 and analyzes the method used to authenticate the user as well as checking server configuration details. It then crawls the entire site while logged in as each user in the list. It fills out forms using the fuzzer or pre-recorded form inputs and follows links. As the crawler runs, API requests are intercepted and logged.
+                        The scanner logs in to your site and analyzes the method used to authenticate the user as well as checking server configuration details. It then crawls the entire site while logged in as each user in the previously defined list. It fills out forms, using the fuzzer or with pre-recorded form inputs, and follows links. As the crawler runs, API requests are intercepted and logged.
                     </p>
 
                     <b>3. Attempt Intrusion</b>
 
                     <p>
-                        For every API request logged in the previous step, OneScan attempts to perform that request while logged in as every other user than the one who the request was discovered under. It also attempts each request while not logged in.
+                        For every API request logged in the previous step, OneScan attempts to perform that request while logged in as every other user. It also attempts each request while not logged in.
                     </p>
 
                     <b>4. Reporting</b>
 
                     <p>
-                        The API requests from step 3 are parsed and grouped according to the access control pattern and presented along with the authentication and configuration scan results.
+                        The API requests from step three are parsed and grouped according to the access control pattern and presented along with the authentication and configuration scan results.
                     </p>
                 </div><!--//video-->
             </div><!--//row-->
