@@ -1,3 +1,288 @@
-<h3>OneScan</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OneScan</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.0/js/all.js" integrity="sha384-ukiibbYjFS/1dhODSWD+PrZ6+CGCgf8VbyUH7bQQNUulL+2r59uGYToovytTf4Xm" crossorigin="anonymous"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
+    <link rel="stylesheet" href="assets/plugins/animate-css/animate.min.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-2.css">
+</head>
 
-<p>OneScan crawls your Single Page Application to identify security vulnerabilities and misconfigured settings.</p>
+<body>
+    <!-- ******HEADER****** -->
+    <header id="top" class="header fixed-top">
+        <div class="container">
+            <h1 class="logo float-left">
+                <a class="scrollto" href="#promo">
+                    <img id="logo-image" class="logo-image" src="assets/images/logo/logo-2.png" alt="Logo">
+                    <span class="logo-title">OneScan</span>
+                </a>
+            </h1><!--//logo-->
+            <nav id="main-nav" class="main-nav navbar-light navbar-expand-md" role="navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-end" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#how">How it works</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+                        <li class="nav-item last"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div>
+    </header><!--//header-->
+
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header has-pattern">
+        <div class="container">
+            <div class="row" style="">
+                <div class="overview col-12">
+                    <h2 class="title">Security scanning for your Single Page Application and API</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="overview col-6">
+                    <ul class="summary" style="padding-left: 0px">
+                        <li>Built for developers</li>
+                        <li>Detects insecure implementations of JWT, OAuth, Session IDs, Tokens</li>
+                        <li>Ensures API access is locked down using Principle of Least Privilege</li>
+                        <li>Prevents data leakage and information exposure</li>
+                        <li>Checks server is configured following security best practices</li>
+                        <li>Supports all major frontend frameworks:</li>
+                        <li style="background: none;">
+                            <!-- <img src="assets/images/ecosystem_snyk.svg"/> -->
+                            React, Angular, Ember, Vue etc.
+                        </li>
+
+                    </ul>
+                    <div class="download-area">
+                        <ul class="list-inline">
+                            <li class="android-btn list-inline-item"><a href="#">Get it from Google Play</a></li>
+                        </ul>
+                    </div>
+                </div><!--//overview-->
+
+                <div class="overview col-6">
+                    <img class="chrome-window" src="assets/images/chrome-browser.png"  alt="" style="width: 600px;"/>
+                </div>
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//promo-->
+
+    <!-- ******FEATURES****** -->
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title text-center">Features</h2>
+                    <br/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item col-4 text-center">
+                    <div class="icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div><!--//icon-->
+                    <div class="content">
+                        <h3 class="title">Authentication Scanning</h3>
+
+                        <p>Scan for common misconfigurations of JSON Web Tokens (JWT), OAuth login, session IDs and cookies.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-4 text-center">
+                    <div class="icon">
+                        <i class="fas fa-id-card-alt"></i>
+                    </div><!--//icon-->
+                    <div class="content">
+                        <h3 class="title">Authorization Analysis</h3>
+
+                        <p>Crawl your site under different user accounts and cross-check the resources available to each user to generate a report allowing you to identify misconfigurations in your Role-Based-Access-Control policy.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-4 text-center">
+                    <div class="icon">
+                        <i class="fas fa-tasks"></i>
+                    </div><!--//icon-->
+                    <div class="content">
+                        <h3 class="title">Security Best Practices</h3>
+
+                        <p>Generates a list of recommendations to ensure your server is configured according to security best practices.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+            </div><!--//row-->
+
+            <div class="row" style="margin-top: 20px">
+                <div class="item col-4 offset-2 text-center">
+                    <div class="icon">
+                        <i class="fas fa-edit"></i>
+                    </div><!--//icon-->
+                    <div class="content">
+                        <h3 class="title">Form Fuzzing</h3>
+
+                        <p>Optionally fuzz form inputs to submit forms and record resulting API calls. These API calls will later be cross-examined in the Authorization Analysis phase. You can also record manual form submittion too.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-4 text-center">
+                    <div class="icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div><!--//icon-->
+                    <div class="content">
+                        <h3 class="title">In-Depth Report</h3>
+
+                        <p>Gain a unique insight into your authorization logic to uncover potential bugs in your code.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//features-->
+
+    <!-- ******HOW****** -->
+    <section id="how" class="how section has-pattern">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title text-center">How it works</h2>
+                    <br/>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+                    <b>1. Configuration</b>
+
+                    <p>
+                      Enter the details of your site. Record the process for logging in i.e. by typing in username and password fields. Enter user credentials for the users you wish to crawl the site under - ideally at least two user per role. Add any blacklisted paths you don't want the crawler to touch. Optionally, you can login as a user and record values to enter for certain forms to ensure they are submitted with valid inputs, otherwise the fuzzer will infer what values to enter.
+                    </p>
+
+                    <b>2. Scanning & Crawling</b>
+
+                    <p>
+                        The scanner logs in using the pre-recorded method from step 1 and analyzes the method used to authenticate the user as well as checking server configuration details. It then crawls the entire site while logged in as each user in the list. It fills out forms using the fuzzer or pre-recorded form inputs and follows links. As the crawler runs, API requests are intercepted and logged.
+                    </p>
+
+                    <b>3. Attempt Intrusion</b>
+
+                    <p>
+                        For every API request logged in the previous step, OneScan attempts to perform that request while logged in as every other user than the one who the request was discovered under. It also attempts each request while not logged in.
+                    </p>
+
+                    <b>4. Reporting</b>
+
+                    <p>
+                        The API requests from step 3 are parsed and grouped according to the access control pattern and presented along with the authentication and configuration scan results.
+                    </p>
+                </div><!--//video-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//how-->
+
+    <!-- ******Pricing****** -->
+    <section id="pricing" class="pricing section">
+        <div class="container">
+             <h2 class="title text-center">Choose your plan today</h2>
+             <div class="price-cols row">
+                <div class="items-wrapper col-lg-10 col-12 ml-lg-auto mr-lg-auto">
+                    <div class="row">
+                        <div class="item price-1 col-4 offset-2 text-center">
+                            <div class="item-inner">
+                                <div class="heading">
+                                <h3 class="title">Community</h3>
+                                    <p class="price-figure"><span class="price-figure-inner"><span class="number">Free</span></span></p>
+                                </div>
+                                <div class="content">
+                                    <ul class="list-unstyled feature-list">
+                                        <li><i class="fas fa-check"></i>Unlimited Sites</li>
+                                        <li><i class="fas fa-check"></i>Unlimited Scans</li>
+                                        <li><i class="fas fa-check"></i>Server Config Scan</li>
+                                        <li><i class="fas fa-check"></i>Authentication Check</li>
+                                        <li><i class="fas fa-check"></i>Authorization scanning up to 100 URLs per scan</li>
+                                        <li style="opacity: 0.0">&nbsp;</li>
+                                        <li style="opacity: 0.0">&nbsp;</li>
+                                        <li style="opacity: 0.0">&nbsp;</li>
+                                    </ul>
+                                    <a class="btn btn-theme btn-block" href="#">Sign Up</a>
+
+                                </div><!--//content-->
+                            </div><!--//item-inner-->
+                        </div><!--//item-->
+
+                        <div class="item price-2 col-4 text-center">
+                            <div class="item-inner">
+                                <div class="heading">
+                                <h3 class="title">Professional</h3>
+                                    <p class="price-figure">
+                                        <span class="price-figure-inner">
+                                            <span class="currency">$</span>
+                                            <span class="number">199</span>
+                                            <br />
+                                            <span class="unit">per year</span>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="content">
+                                    <ul class="list-unstyled feature-list">
+                                        <li><i class="fas fa-check"></i>Unlimited Sites</li>
+                                        <li><i class="fas fa-check"></i>Unlimited Scans</li>
+                                        <li><i class="fas fa-check"></i>Server Config Scan</li>
+                                        <li><i class="fas fa-check"></i>Authentication Check</li>
+                                        <li><i class="fas fa-check"></i>Authorization scanning for unlimited URLs</li>
+
+                                        <li><i class="fas fa-check"></i>Record manual form entries</li>
+                                        <li><i class="fas fa-check"></i>Export results to CSV</li>
+                                        <li><i class="fas fa-check"></i>PDF summary report</li>
+                                    </ul>
+                                    <a class="btn btn-theme btn-block" href="#">Sign Up</a>
+                                </div><!--//content-->
+                            </div><!--//item-inner-->
+                        </div><!--//item-->
+                    </div><!--//row-->
+                </div><!--//items-wrapper-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//pricing-->
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer" id="contact">
+        <div class="container text-center">
+            Contact: info@onescan.io
+        </div>
+    </footer><!--//footer-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-inview/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/plugins//jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!--[if !IE]>-->
+    <script type="text/javascript" src="assets/js/animations.js"></script>
+    <!--<![endif]-->
+    <!-- Theme Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script type="text/javascript" src="assets/js/demo/theme-switcher.js"></script>
+</body>
+</html>
+
